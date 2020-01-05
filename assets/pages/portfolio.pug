@@ -1,0 +1,193 @@
+h1 Portfolio
+.scroll-wrapper
+	p.manchet  What have I learned over the course of my first semester as a multimedia designer on CPH Business? I will go over each flow or "chapter" in the semester a provide a few reflectings.  What have I learned over the course of my first semester as a multimedia designer on CPH Business? I will go over each flow or "chapter" in the semester a provide a few reflectings.  What have I learned over the course of my first semester as a multimedia designer on CPH Business? I will go over each flow or "chapter" in the semester a provide a few reflectings. 
+
+	.auto-grid
+		.grid-item.card
+			- var category = 'Hobby'
+			- var title = 'Personal Logo'
+			- var date = '9th of September 2019'
+			- var description = 'A smaller assignment that was part of flow three. Create five unique icons - there were no restrictions in terms of theme.'
+			.thumbnail
+				span.category= category
+				h3= title
+				span= date
+			.preview
+				h5.title= title
+				p.description= description
+			.expand
+				button.close
+				h3.e-title= title
+				p.e-description= description
+				.body
+					.auto-grid
+						.grid-item
+							img(src="portfolio/personal_logo/logo_2.svg")
+						.grid-item
+							img(src="portfolio/personal_logo/logo_3.svg")
+						.grid-item
+							img(src="portfolio/personal_logo/logo_4.svg")
+						.grid-item
+							img(src="portfolio/personal_logo/logo_5.svg")
+						.grid-item
+							img(src="portfolio/personal_logo/logo_6.svg")
+
+		.grid-item.card
+			- var category = 'CPH Business'
+			- var title = 'World Campaign'
+			- var date = '9th of September 2019'
+			- var description = 'A smaller assignment that was part of flow three. Create five unique icons - there were no restrictions in terms of theme.'
+			.thumbnail
+				span.category= category
+				h3= title
+				span= date
+			.preview
+				h5.title= title
+				p.description= description
+			.expand
+				button.close
+				h3.e-title= title
+				p.e-description= description
+				.body
+					img(src="portfolio/world_campaign/screenshot.jpg")
+		.grid-item.card#iconography
+			- var category = 'CPH Business'
+			- var title = 'Iconography'
+			- var date = '9th of September 2019'
+			- var description = 'A smaller assignment that was part of flow three. Create five unique icons - there were no restrictions in terms of theme.'
+			.thumbnail
+				span.category= category
+				h3= title
+				span= date
+			.preview
+				h5.title= title
+				p.description= description
+			.expand
+				button.close
+				h3.e-title= title
+				p.e-description= description
+				.body
+					.auto-grid
+						.grid-item
+							img(src="portfolio/iconography/icon-1.svg")
+						.grid-item
+							img(src="portfolio/iconography/icon-2.svg")
+						.grid-item
+							img(src="portfolio/iconography/icon-3.svg")
+						.grid-item
+							img(src="portfolio/iconography/icon-4.svg")
+						.grid-item
+							img(src="portfolio/iconography/icon-5.svg")
+		.grid-item.card#prototype
+			- var category = 'CPH Business'
+			- var title = 'Portfolio Prototype'
+			- var date = '12th of September 2019'
+			- var description = 'A smaller assignment that was part of flow three. Create five unique icons - there were no restrictions in terms of theme.'
+			.thumbnail
+				span.category= category
+				h3= title
+				span= date
+			.preview
+				h5.title= title
+				p.description= description
+			.expand
+				button.close
+				h3.e-title= title
+				p.e-description= description
+				.body
+					.auto-grid
+						.grid-item
+							img(src="portfolio/prototype/home.png")
+						.grid-item
+							img(src="portfolio/prototype/portfolio.png")
+						.grid-item
+							img(src="portfolio/prototype/about.png")
+						.grid-item
+							img(src="portfolio/prototype/contact.png")
+		.grid-item.card#photoshop-assignment
+			- var category = 'CPH Business'
+			- var title = 'Photoshop Assignment'
+			- var date = '9th of September 2019'
+			- var description = 'One of the first assignments. gnments. gnments. gnments. gnments. gnments. gnments. gnments. gnments. gnments. gnments. gnments. gnments. Alter the image in various ways using the tools within Photoshop.'
+			.thumbnail
+				span.category= category
+				h3= title
+				span= date
+			.preview
+				h5.title= title
+				p.description= description
+			.expand
+				button.close
+				h3.e-title= title
+				p.e-description= description
+				.body
+					p One of the very first assignments we got was to utilise as many of the features and tools that we've learned in Adobe Photoshop. We had to take an object from one original scene and put it into another scene. We were also allowed to alter and change other aspects of the image, as shown below - this was my attempt on the assignment.
+					p The two unique pictures were taken in Copenhagen, and the star in the picture is Simon.
+					h6 Original Scene:
+					img(src="images/photoshop/before.jpg")
+					h6 Asset:
+					img(src="images/photoshop/asset.jpg")
+					h6 Final Result:
+					img(src="images/photoshop/after.jpg")
+					br
+					p The image contains numerous alternations and small adjustments such as colour correction, sky alternation and more.
+					
+
+		.grid-item.card 
+			- var category = 'Age of Empires II'
+			- var title = 'Rulebook #3'
+			- var date = 'August 2019'
+			- var description = 'An original rulebook written and designed for the 1.000$ tournament "Rise to Glory" hosted by Voobly.'
+			.thumbnail
+				span.category= category
+				h3= title
+				span= date
+			.preview
+				h5.title= title
+				p.description= description
+			.expand
+				button.close
+				h3.e-title= title
+				p.e-description= description
+				.body
+					.responsive-portrait
+						embed(src="portfolio/handbook-3.pdf")
+		.grid-item.card 
+			- var category = 'Age of Empires II'
+			- var title = 'Rulebook #2'
+			- var date = 'May 2019'
+			- var description = 'An original rulebook written and designed for the tournament "European League of Clans" hosted by MundoAoE.'
+			.thumbnail
+				span.category= category
+				h3= title
+				span= date
+			.preview
+				h5.title= title
+				p.description= description
+			.expand
+				button.close
+				h3.e-title= title
+				p.e-description= description
+				.body
+					.responsive-portrait
+						embed(src="portfolio/handbook-2.pdf")
+
+		.grid-item.card 
+			- var category = 'Age of Empires II'
+			- var title = 'Rulebook #1'
+			- var date = 'December 2018'
+			- var description = 'An original rulebook written and designed for the 15.800$ tournament "King of the Desert 2".'
+			.thumbnail
+				span.category= category
+				h3= title
+				span= date
+			.preview
+				h5.title= title
+				p.description= description
+			.expand
+				button.close
+				h3.e-title= title
+				p.e-description= description
+				.body
+					.responsive-portrait
+						embed(src="portfolio/handbook-1.pdf")

@@ -1,0 +1,49 @@
+doctype html
+
+html(lang="en")
+	head
+		title Amdi's Portfolio
+		
+		meta(charset="UTF-8")
+		meta(name="description" content="Amdi's Personal Portfolio")
+		meta(name="keywords" content="Amdi, Portfolio, CPH Business, Exam, Multimedia, Designer, UX, HTML, CSS, JavsScript")
+		meta(name="author" content="Christian Amdi Jensen")
+		meta(name="viewport" content="width=device-width, user-scalable=no")
+		
+		
+		link(rel="stylesheet", href="css/main.css")
+		link(rel="stylesheet", href="https://use.typekit.net/ipn0jrn.css")
+		link(rel="icon" href="images/favicon.png")
+	body
+		#top.line
+		#left.line
+		#right.line
+		#bottom.line
+
+		button#hamburger
+			img(src="images/icons/menu.svg")
+			
+		nav
+			a.changed(href="#home") Home
+			a(href="#exam") Exam
+			a(href="#learning") Learning
+			a(href="#portfolio") Portfolio
+			a(href="#about") About
+			a(href="#contact") Contact
+
+		main
+			section#home
+				include pages/home
+			section#exam.hidden
+				include pages/exam
+			section#learning.hidden
+				include pages/learning
+			section#portfolio.hidden
+				include pages/portfolio
+			section#about.hidden
+				include pages/about
+			section#contact.hidden
+				include pages/contact
+
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+script(type="text/javascript" src="javascript/main.js")
